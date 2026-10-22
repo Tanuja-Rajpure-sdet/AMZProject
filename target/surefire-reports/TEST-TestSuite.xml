@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="65.958" tests="4" errors="0" skipped="2" failures="2">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Anna Rajpure\eclipse-workspace\AmzProject\target\test-classes;C:\Users\Anna Rajpure\eclipse-workspace\AmzProject\target\classes;C:\Users\Anna Rajpure\.m2\repository\com\microsoft\playwright\playwright\1.62.0\playwright-1.62.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\google\code\gson\gson\2.14.0\gson-2.14.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\google\errorprone\error_prone_annotations\2.48.0\error_prone_annotations-2.48.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\microsoft\playwright\driver\1.62.0\driver-1.62.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\microsoft\playwright\driver-bundle\1.62.0\driver-bundle-1.62.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Anna Rajpure\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Anna Rajpure\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\Anna Rajpure\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Anna Rajpure\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Anna Rajpure\.m2\repository\io\github\cdimascio\dotenv-java\3.2.0\dotenv-java-3.2.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.3\bin"/>
+    <property name="sun.java.command" value="C:\Users\Anna Rajpure\AppData\Local\Temp\surefire4769582046983014544\surefirebooter-20261022214225082_3.jar C:\Users\Anna Rajpure\AppData\Local\Temp\surefire4769582046983014544 2026-10-22T21-42-24_865-jvmRun1 surefire-20261022214225082_1tmp surefire_0-20261022214225082_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Anna Rajpure\eclipse-workspace\AmzProject\target\test-classes;C:\Users\Anna Rajpure\eclipse-workspace\AmzProject\target\classes;C:\Users\Anna Rajpure\.m2\repository\com\microsoft\playwright\playwright\1.62.0\playwright-1.62.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\google\code\gson\gson\2.14.0\gson-2.14.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\google\errorprone\error_prone_annotations\2.48.0\error_prone_annotations-2.48.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\microsoft\playwright\driver\1.62.0\driver-1.62.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\microsoft\playwright\driver-bundle\1.62.0\driver-bundle-1.62.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Anna Rajpure\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Anna Rajpure\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\Anna Rajpure\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Anna Rajpure\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\Anna Rajpure\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\Anna Rajpure\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Anna Rajpure\.m2\repository\io\github\cdimascio\dotenv-java\3.2.0\dotenv-java-3.2.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Anna Rajpure"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Anna Rajpure\eclipse-workspace\AmzProject"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Anna Rajpure\AppData\Local\Temp\surefire4769582046983014544\surefirebooter-20261022214225082_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS-195"/>
+    <property name="user.name" value="Anna Rajpure"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Anna Rajpure\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ANNARA~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.3"/>
+    <property name="user.dir" value="C:\Users\Anna Rajpure\eclipse-workspace\AmzProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.3\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Anna Rajpure/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531/jre/bin/server;C:/Users/Anna Rajpure/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\Anna Rajpure\Downloads\openjdk-22.0.2_windows-x64_bin\jdk-22.0.2;C:\Users\Anna Rajpure\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Anna Rajpure\AppData\Local\Programs\Python\Python312\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Anna Rajpure\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.2\bin;;C:\Users\Anna Rajpure\AppData\Roaming\npm;C:\WINDOWS\system32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.3+9-LTS-195"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="withValidCredentails" classname="amazontest.AmzProject.TestCase1_LoginToAmazon" time="0.0">
+    <skipped message="Page title expected to be&#10;Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in&#10;Received: Sign in&#10;&#10;Call log:&#10;  - Assert &quot;hasTitle&quot; with timeout 5000ms&#10;    2 × locator resolved to &lt;html lang=&quot;en-in&quot; class=&quot;a-no-js&quot; data-19ax5a9jf=&quot;dingo&quot;&gt;…&lt;/html&gt;&#10;      - unexpected value &quot;&quot;&#10;    11 × locator resolved to &lt;html lang=&quot;en-in&quot; data-19ax5a9jf=&quot;dingo&quot; data-aui-build-date=&quot;3.26.9-2026-10-19&quot; class=&quot;a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…&gt;…&lt;/html&gt;&#10;       - unexpected value &quot;Sign in&quot;"/>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="withValidCredentails" classname="amazontest.AmzProject.TestCase1_LoginToAmazon" time="11.233">
+    <failure message="Page title expected to be&#10;Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in&#10;Received: Sign in&#10;&#10;Call log:&#10;  - Assert &quot;hasTitle&quot; with timeout 5000ms&#10;    13 × locator resolved to &lt;html lang=&quot;en-in&quot; data-19ax5a9jf=&quot;dingo&quot; data-aui-build-date=&quot;3.26.9-2026-10-19&quot; class=&quot;a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember-modern a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-…&gt;…&lt;/html&gt;&#10;       - unexpected value &quot;Sign in&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember-modern a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-…>…</html>
+       - unexpected value "Sign in"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:81)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:39)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:50)
+	at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:154)
+	at amazontest.AmzProject.TestCase1_LoginToAmazon.withValidCredentails(TestCase1_LoginToAmazon.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="withValidCredentailsandLogout" classname="amazontest.AmzProject.TestCase2_LoginToAmazonandLogout" time="0.0">
+    <skipped message="Page title expected to be&#10;Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in&#10;Received: Sign in&#10;&#10;Call log:&#10;  - Assert &quot;hasTitle&quot; with timeout 5000ms&#10;    13 × locator resolved to &lt;html lang=&quot;en-in&quot; data-19ax5a9jf=&quot;dingo&quot; data-aui-build-date=&quot;3.26.9-2026-10-19&quot; class=&quot;a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…&gt;…&lt;/html&gt;&#10;       - unexpected value &quot;Sign in&quot;"/>
+  </testcase>
+  <testcase name="withValidCredentailsandLogout" classname="amazontest.AmzProject.TestCase2_LoginToAmazonandLogout" time="11.101">
+    <failure message="Page title expected to be&#10;Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in&#10;Received: Sign in&#10;&#10;Call log:&#10;  - Assert &quot;hasTitle&quot; with timeout 5000ms&#10;    13 × locator resolved to &lt;html lang=&quot;en-in&quot; data-19ax5a9jf=&quot;dingo&quot; data-aui-build-date=&quot;3.26.9-2026-10-19&quot; class=&quot;a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…&gt;…&lt;/html&gt;&#10;       - unexpected value &quot;Sign in&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…>…</html>
+       - unexpected value "Sign in"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:81)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:39)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:50)
+	at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:154)
+	at amazontest.AmzProject.TestCase2_LoginToAmazonandLogout.withValidCredentailsandLogout(TestCase2_LoginToAmazonandLogout.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+</testsuite>

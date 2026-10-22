@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="0" total="4" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-22T22:02:49 IST" name="SmokeSuite" finished-at="2026-10-22T22:04:00 IST" duration-ms="70434">
+    <groups>
+    </groups>
+    <test started-at="2026-10-22T22:02:49 IST" name="Testing On Chromium engine" finished-at="2026-10-22T22:04:00 IST" duration-ms="70434">
+      <class name="amazontest.AmzProject.TestCase1_LoginToAmazon">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:amazontest.AmzProject.TestCase1_LoginToAmazon@3c407114]" started-at="2026-10-22T22:02:49 IST" name="launch" finished-at="2026-10-22T22:02:58 IST" duration-ms="8525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method retried="true" signature="withValidCredentails()[pri:0, instance:amazontest.AmzProject.TestCase1_LoginToAmazon@3c407114]" started-at="2026-10-22T22:02:58 IST" name="withValidCredentails" finished-at="2026-10-22T22:03:10 IST" duration-ms="12500" status="SKIP">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember-modern a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-…>…</html>
+       - unexpected value "Sign in"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember-modern a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-…>…</html>
+       - unexpected value "Sign in"
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:81)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:39)
+at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:50)
+at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:154)
+at amazontest.AmzProject.TestCase1_LoginToAmazon.withValidCredentails(TestCase1_LoginToAmazon.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.opentest4j.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCredentails -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:amazontest.AmzProject.TestCase1_LoginToAmazon@3c407114]" started-at="2026-10-22T22:03:10 IST" name="quit" finished-at="2026-10-22T22:03:11 IST" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:amazontest.AmzProject.TestCase1_LoginToAmazon@3c407114]" started-at="2026-10-22T22:03:11 IST" name="launch" finished-at="2026-10-22T22:03:16 IST" duration-ms="4600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="withValidCredentails()[pri:0, instance:amazontest.AmzProject.TestCase1_LoginToAmazon@3c407114]" started-at="2026-10-22T22:03:16 IST" name="withValidCredentails" finished-at="2026-10-22T22:03:27 IST" duration-ms="11328" status="FAIL">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    2 × locator resolved to <html lang="en-in" class="a-no-js" data-19ax5a9jf="dingo">…</html>
+      - unexpected value ""
+    - locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…>…</html>
+    - unexpected value ""
+    10 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…>…</html>
+       - unexpected value "Sign in"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    2 × locator resolved to <html lang="en-in" class="a-no-js" data-19ax5a9jf="dingo">…</html>
+      - unexpected value ""
+    - locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…>…</html>
+    - unexpected value ""
+    10 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…>…</html>
+       - unexpected value "Sign in"
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:81)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:39)
+at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:50)
+at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:154)
+at amazontest.AmzProject.TestCase1_LoginToAmazon.withValidCredentails(TestCase1_LoginToAmazon.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.opentest4j.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCredentails -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:amazontest.AmzProject.TestCase1_LoginToAmazon@3c407114]" started-at="2026-10-22T22:03:27 IST" name="quit" finished-at="2026-10-22T22:03:28 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- amazontest.AmzProject.TestCase1_LoginToAmazon -->
+      <class name="amazontest.AmzProject.TestCase2_LoginToAmazonandLogout">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:amazontest.AmzProject.TestCase2_LoginToAmazonandLogout@62150f9e]" started-at="2026-10-22T22:03:28 IST" name="launch" finished-at="2026-10-22T22:03:30 IST" duration-ms="2393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method retried="true" signature="withValidCredentailsandLogout()[pri:0, instance:amazontest.AmzProject.TestCase2_LoginToAmazonandLogout@62150f9e]" started-at="2026-10-22T22:03:30 IST" name="withValidCredentailsandLogout" finished-at="2026-10-22T22:03:42 IST" duration-ms="12008" status="SKIP">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember-modern a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-…>…</html>
+       - unexpected value "Sign in"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember-modern a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-…>…</html>
+       - unexpected value "Sign in"
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:81)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:39)
+at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:50)
+at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:154)
+at amazontest.AmzProject.TestCase2_LoginToAmazonandLogout.withValidCredentailsandLogout(TestCase2_LoginToAmazonandLogout.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.opentest4j.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCredentailsandLogout -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:amazontest.AmzProject.TestCase2_LoginToAmazonandLogout@62150f9e]" started-at="2026-10-22T22:03:42 IST" name="quit" finished-at="2026-10-22T22:03:43 IST" duration-ms="626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:amazontest.AmzProject.TestCase2_LoginToAmazonandLogout@62150f9e]" started-at="2026-10-22T22:03:43 IST" name="launch" finished-at="2026-10-22T22:03:45 IST" duration-ms="2124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="withValidCredentailsandLogout()[pri:0, instance:amazontest.AmzProject.TestCase2_LoginToAmazonandLogout@62150f9e]" started-at="2026-10-22T22:03:45 IST" name="withValidCredentailsandLogout" finished-at="2026-10-22T22:03:59 IST" duration-ms="13404" status="FAIL">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…>…</html>
+       - unexpected value "Sign in"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: Page title expected to be
+Expected: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+Received: Sign in
+
+Call log:
+  - Assert "hasTitle" with timeout 5000ms
+    13 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.9-2026-10-19" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember a-ember-1-0-0 a-ember-modern-display a-ember-modern-display-1-0-1 a-ember-modern-text a-ember-mo…>…</html>
+       - unexpected value "Sign in"
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:81)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:39)
+at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:50)
+at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:154)
+at amazontest.AmzProject.TestCase2_LoginToAmazonandLogout.withValidCredentailsandLogout(TestCase2_LoginToAmazonandLogout.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.opentest4j.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCredentailsandLogout -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:amazontest.AmzProject.TestCase2_LoginToAmazonandLogout@62150f9e]" started-at="2026-10-22T22:03:59 IST" name="quit" finished-at="2026-10-22T22:04:00 IST" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- amazontest.AmzProject.TestCase2_LoginToAmazonandLogout -->
+    </test> <!-- Testing On Chromium engine -->
+  </suite> <!-- SmokeSuite -->
+</testng-results>
