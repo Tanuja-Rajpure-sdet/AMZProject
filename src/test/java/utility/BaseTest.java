@@ -22,20 +22,22 @@ public class BaseTest extends ListenrsLogic
 		if(nameofSearchEngine.equals("chrome"))
 		{
 		playwright =     Playwright.create();
-		browser =        playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+		browser =        playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
 		browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+dateFormat)));
 		page=            browsercontext.newPage();
 		}
 		if(nameofSearchEngine.equals("webkit"))
 		{
 		playwright =     Playwright.create();
-		browser =        playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
+		browser =        playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(true));
+		browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+dateFormat)));
 		page=            browser.newPage();
 		}
 		if(nameofSearchEngine.equals("firefox"))
 		{
 		playwright =     Playwright.create();
-		browser =        playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+		browser =        playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(true));
+		browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+dateFormat)));
 		page=            browser.newPage();
 		}
 		page.navigate("https://www.amazon.in");
@@ -47,7 +49,8 @@ public class BaseTest extends ListenrsLogic
 	
 	public void quit()
 	{
-		browser.close();
+		
 		browsercontext.close();
+		browser.close();
 	}	
 }
