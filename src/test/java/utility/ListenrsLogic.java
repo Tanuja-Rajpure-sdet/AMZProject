@@ -31,7 +31,7 @@ public class ListenrsLogic implements ITestListener{
 		ITestListener.super.onTestSuccess(result);
 		// Logic should start from here
 				
-		page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Pass\\"+result.getName() + dateFormat + ".png")));
+		//page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Pass\\"+result.getName() + dateFormat + ".png")));
 		
 	}
 
@@ -40,8 +40,8 @@ public class ListenrsLogic implements ITestListener{
 	{
 		ITestListener.super.onTestFailure(result);
 		// Logic should start from here
-		
-		page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Fail\\"+result.getName() + dateFormat + ".png")));
+		//commenting to found out if targetclosed error is due to this or not?
+		//page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Fail\\"+result.getName() + dateFormat + ".png")));
 	//	browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+result.getName())));
 
 	}
