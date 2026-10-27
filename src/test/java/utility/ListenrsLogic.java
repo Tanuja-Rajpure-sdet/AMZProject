@@ -14,10 +14,10 @@ import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.Browser.NewContextOptions;
 
 public class ListenrsLogic implements ITestListener{
-	public static Playwright playwright;
-	public static Browser browser;
-	public static BrowserContext browsercontext;
-	public static Page page;
+	//public static Playwright playwright;
+	//public static Browser browser;
+	//public static BrowserContext browsercontext;
+	//public static Page page;
 	Date d1 = new Date();
 	//System.out.println(d1.getTime());
 	Date d2 = new Date(d1.getTime());
@@ -31,7 +31,7 @@ public class ListenrsLogic implements ITestListener{
 		ITestListener.super.onTestSuccess(result);
 		// Logic should start from here
 				
-		//page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Pass\\"+result.getName() + dateFormat + ".png")));
+		BaseTest.page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Pass\\"+result.getName() + dateFormat + ".png")));
 		
 	}
 
@@ -41,7 +41,7 @@ public class ListenrsLogic implements ITestListener{
 		ITestListener.super.onTestFailure(result);
 		// Logic should start from here
 		//commenting to found out if targetclosed error is due to this or not?
-		//page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Fail\\"+result.getName() + dateFormat + ".png")));
+		BaseTest.page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Fail\\"+result.getName() + dateFormat + ".png")));
 	//	browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+result.getName())));
 	
 	}
