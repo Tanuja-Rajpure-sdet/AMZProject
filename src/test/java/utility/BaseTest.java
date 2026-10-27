@@ -50,23 +50,21 @@ public class BaseTest extends ListenrsLogic
 	}
 	
 	
-	@AfterMethod
-	
 	@AfterMethod(alwaysRun = true)
 public void quit() {
-    System.out.println("STEP 7: Closing browser context");
+//    System.out.println("STEP 7: Closing browser context");
 
     if (browsercontext != null) {
         browsercontext.close();
     }
 
-    System.out.println("STEP 8: Closing browser");
+  //  System.out.println("STEP 8: Closing browser");
 
     if (browser != null) {
         browser.close();
     }
 
-    System.out.println("STEP 9: Closing Playwright");
+    //System.out.println("STEP 9: Closing Playwright");
 
     if (playwright != null) {
         playwright.close();
