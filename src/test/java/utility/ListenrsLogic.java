@@ -32,17 +32,7 @@ public class ListenrsLogic implements ITestListener{
 		// Logic should start from here
 				
 		//page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Pass\\"+result.getName() + dateFormat + ".png")));
-		try {
-			if(page !=null && !page.isClosed())
-			{
-				Files.createDirectories(Paths.get("test-output/Screenshot/Pass"));
-				page.screenshot(new ScreenshotOptions().setPath(
-	                    Paths.get("test-output/Screenshot/Pass/"
-	                    + result.getName() + dateFormat + ".png")));
-			}
-		}catch(Exception e) {
-			 System.out.println("Pass screenshot failed: " + e.getMessage());
-		}
+		
 	}
 
 	@Override
@@ -53,17 +43,7 @@ public class ListenrsLogic implements ITestListener{
 		//commenting to found out if targetclosed error is due to this or not?
 		//page.screenshot(new ScreenshotOptions().setPath(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Screenshot\\Fail\\"+result.getName() + dateFormat + ".png")));
 	//	browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+result.getName())));
-	try {
-			if(page !=null && !page.isClosed())
-			{
-				Files.createDirectories(Paths.get("test-output/Screenshot/Fail"));
-				page.screenshot(new ScreenshotOptions().setPath(
-	                    Paths.get("test-output/Screenshot/Fail/"
-	                    + result.getName() + dateFormat + ".png")));
-			}
-		}catch(Exception e) {
-			 System.out.println("Fail screenshot failed: " + e.getMessage());
-		}
+	
 	}
 
 }
