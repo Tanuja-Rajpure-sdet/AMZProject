@@ -16,7 +16,7 @@ public class LoginPage {
 		username=	page.getByLabel("Enter mobile number or email", new GetByLabelOptions().setExact(true));
 		continuebutton=	page.locator("//input[@class='a-button-input']");
 		password=	page.locator("//input[@name='password']");
-		signin=	page.locator("#signInSubmit");
+		signin=	page.locator("//input[@class='a-button-input']");
 	}
 	
 	public void enterUsername(String UN)
