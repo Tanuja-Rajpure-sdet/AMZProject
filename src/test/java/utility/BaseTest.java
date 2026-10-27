@@ -28,21 +28,27 @@ public class BaseTest extends ListenrsLogic
 		{
 		playwright =     Playwright.create();
 		browser =        playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
-		browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+ dateFormat)));
-		page=            browsercontext.newPage();
+		//browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+ dateFormat)));
+		browsercontext = browser.newContext(new NewContextOptions()
+				.setRecordVideoDir(Paths.get("test-output","Video",dateFormat)));
+			page=            browsercontext.newPage();
 		}
 		if(nameofSearchEngine.equals("webkit"))
 		{
 		playwright =     Playwright.create();
 		browser =        playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(true));
-		browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+ dateFormat)));
+		//browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+ dateFormat)));
+		browsercontext = browser.newContext(new NewContextOptions()
+				.setRecordVideoDir(Paths.get("test-output","Video",dateFormat)));
 		page=            browsercontext.newPage();
 		}
 		if(nameofSearchEngine.equals("firefox"))
 		{
 		playwright =     Playwright.create();
 		browser =        playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(true));
-		browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+ dateFormat)));
+		//browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmzProject\\test-output\\Video"+ dateFormat)));
+		browsercontext = browser.newContext(new NewContextOptions()
+				.setRecordVideoDir(Paths.get("test-output","Video",dateFormat)));
 		page=            browsercontext.newPage();
 		}
 		page.navigate("https://www.amazon.in");
