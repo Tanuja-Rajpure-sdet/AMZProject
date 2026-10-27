@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SmokeSuite">
-  <test thread-count="5" name="Testing On Chromium engine">
-  	<parameter name= "engine" value="chrome"></parameter>
+  <test name="AmazonTest">
+  	<parameter name="engine" value="chrome"></parameter>
     <classes>
-      <class name="amazontest.AmzProject.TestCase1_LoginToAmazon"/>
+      <class name="amazontest.AmzProject.TestCase1_LoginToAmazon"/>   	
       <class name="amazontest.AmzProject.TestCase2_LoginToAmazonandLogout"/>
     </classes>
-  </test> <!-- Testing On Chromium engine -->
-</suite> <!-- SmokeSuite -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
