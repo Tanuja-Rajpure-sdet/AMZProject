@@ -72,3 +72,4 @@ public void quit() {
         playwright.close();
     }	
 }
+}
