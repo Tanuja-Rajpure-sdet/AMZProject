@@ -27,7 +27,7 @@ public class TestCase2_LoginToAmazonandLogout  extends BaseTest
 		
 		loginpage.enterUsername("tdkamthe@gmail.com");
 		loginpage.clickOnContinue();
-																																																			loginpage.enterpassword("Abh1dny@2706 ");
+																																																			loginpage.enterpassword("Abh1dny@2706");
 		loginpage.clickOnSigin();
 		assertThat(page).hasTitle("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		Locator searchText= page.getByLabel("Search Amazon.in");
